@@ -19,3 +19,5 @@ jobs:
         uses: bmuschko/setup-kubeconform@v1
       - name: Validate Against Kubernetes Schema
         run: kubeconform -kubernetes-version=1.29.2 -ignore-filename-pattern=.github/workflows -ignore-filename-pattern=.json$ -ignore-filename-pattern=kustomize -ignore-filename-pattern=helm -ignore-filename-pattern=yq -summary .
+
+# We are using it 
